@@ -1,12 +1,22 @@
+:root {
+    --fonte-principal:'Barlow Semi Condensed';
+}
+
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fonte-principal);
 }
 
 .div-daniel {
+    background: hsl(263, 55%, 52%);
     display: grid;
     width: 500px;
+    margin: 0 6em;
+    border-radius: 10px;
 }
 
+.foto {
+
+}
 
 .nome {
     font-size: 13px;

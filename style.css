@@ -14,27 +14,39 @@ body {
     border-radius: 10px;
 }
 
-.foto {
+.foto_daniel {
+    float: left;
+    padding: 5px;
+}
 
+img {
+    border-radius: 50%;
 }
 
 .nome {
     font-size: 13px;
     position: relative;
     left: 30px;
+    margin: 0 4em;
+    height: auto;
 }
 
 .verificado {
     font-size: 10px;
     position: relative;
     left: 30px;
+    margin: 0 4em;
 }
 
 .titulo {
     font-size: 15px;
     font-weight: bold;
+    padding: 0 1em 0 1em;
 }
 
 .texto {
     font-size: 13px;
+    padding: 0 1em 1em 1em;
 }
+
+

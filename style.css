@@ -1,20 +1,135 @@
 :root {
     --fonte-principal:'Barlow Semi Condensed';
+    --cor-violeta: hsl(263, 55%, 52%);
+    --cor-cinza-escuro:hsl(217, 19%, 35%);
+    --cor-azul-escuro: hsl(219, 29%, 14%);
+    --cor-branco: hsl(0, 0%, 100%);
+    --cor-principal: hsl(210, 46%, 95%);
+    --cor-cinza-claro: hsl(0, 0%, 81%);
 }
 
 body {
     font-family: var(--fonte-principal);
+    background: var(--cor-principal);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 40vh 30vh;
+    grid-gap: 20px;
 }
 
 .div-daniel {
-    background: hsl(263, 55%, 52%);
-    display: grid;
-    width: 500px;
-    margin: 0 6em;
+    background: var(--cor-violeta);
     border-radius: 10px;
+    box-shadow: 2px 2px 5px grey;
 }
 
-.foto_daniel {
+.div-daniel h1 {
+    color: var(--cor-branco);
+}
+
+.texto-daniel {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0 1em 0 1em;
+    color: var(--cor-cinza-claro);
+}
+
+.verificado {
+    color:var(--cor-cinza-claro);
+}
+
+.div-jonathan {
+    background: var(--cor-cinza-escuro); 
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px grey;
+}
+
+.titulo-jonathan {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0 1em 0 1em;
+    color:var(--cor-branco)
+}
+
+.texto-jonathan {
+    font-size: 15px;
+    padding: 0 1em 1em 1em;
+    color:var(--cor-cinza-claro);
+}
+
+.div-kira {
+    background: var(--cor-branco);
+    border-radius: 10px;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    box-shadow: 2px 2px 5px grey;
+}
+
+.titulo-kira {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0 1em 0 1em;
+    color:var(--cor-cinza-escuro);
+}
+
+.texto-kira {
+    font-size: 15px;
+    padding: 0 1em 1em 1em;
+    color:var(--cor-cinza-claro);
+}
+
+.div-jeanette {
+    background: var(--cor-branco);
+    border-radius: 10px;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    box-shadow: 2px 2px 5px grey;
+}
+
+.titulo-jeanette {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0 1em 0 1em;
+    color:var(--cor-cinza-escuro);
+}
+
+.texto-jeanette {
+    font-size: 15px;
+    padding: 0 1em 1em 1em;
+    color:var(--cor-cinza-claro);
+}
+
+.div-patrick {
+    background: var(--cor-azul-escuro);
+    border-radius: 10px;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    box-shadow: 2px 2px 5px grey;
+}
+
+.titulo-patrick {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0 1em 0 1em;
+    color:var(--cor-branco);
+}
+
+.texto-patrick {
+    font-size: 15px;
+    padding: 0 1em 1em 1em;
+    color:var(--cor-cinza-claro);
+}
+
+.foto {
     float: left;
     padding: 5px;
 }
@@ -24,11 +139,13 @@ img {
 }
 
 .nome {
+    font-weight: bold;
     font-size: 13px;
     position: relative;
     left: 30px;
     margin: 0 4em;
     height: auto;
+    color:var(--cor-cinza-claro);
 }
 
 .verificado {
@@ -48,5 +165,3 @@ img {
     font-size: 13px;
     padding: 0 1em 1em 1em;
 }
-
-
